@@ -8,7 +8,7 @@ import wikipedia
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[1].id)
+engine.setProperty('voice',voices[0].id)
 
 def speak(audio):
     engine.say(audio)
@@ -25,7 +25,7 @@ def wishMe():
     else:
         speak("Good Evening")
 
-    speak("I am Mauuu how may I help you?")
+    speak("I am Tony how may I help you?")
 
 def takeCommand():
     r = sr.Recognizer()
